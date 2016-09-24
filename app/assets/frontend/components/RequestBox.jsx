@@ -1,7 +1,9 @@
+import RequestActions from "../actions/RequestActions"
+
 export default class RequestBox extends React.Component {
   sendRequest(event) {
     event.preventDefault();
-    this.props.sendRequest(this.refs.requestTextArea.value);
+    RequestActions.sendRequest(this.refs.requestTextArea.value);
     this.refs.requestTextArea.value = '';
   }
   render() {
