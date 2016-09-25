@@ -5,6 +5,10 @@
   <div class="row">
     <form class="form-inline">
       <div class="form-group">
+        <%= f.check_box :typeuser, {}, "0" %><%= f.label :typeuser, "Customer", { style: "padding-left: 10px; padding-right: 20px;" } %>
+        <%= f.check_box :typeuser, {}, "1" %><%= f.label :typeuser, "Support Agent", { style: "padding-left: 10px;" } %>
+      </div>
+      <div class="form-group">
         <%= f.text_field :firstname %>
         <label for="firstname">First Name</label>
       </div>
